@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                margin: 0;
+                height: 0;
+                background-color: white;
+            }
+            .dashboard{
+                
+                margin: 20px;
+                display:grid;
+                grid-template-columns:200px 1fr ;
+
+                /* gap:5px; */
+            }
+            .header{
+                
+                grid-column:1/3; 
+                background:rgb(194, 96, 96);
+                padding:10px;
+            }
+            
+            .sidebar{
+                
+                background:gray;
+                padding:20px;
+                    }
+            .content{
+                background:lightgray;
+                padding:20px;
+            }
+             .footer{
+                
+                grid-column:1/3;
+                background:rgb(59, 157, 133);
+                padding:10px;
+            } 
+        </style>
+    </head>
+    <body>
+        <h2>Activity 4 - Dashboard</h2>
+<div class="dashboard">
+<div class="header">header</div>
+<div class="sidebar">Sidebar</div>
+<div class="content">
+    
+Header<br><br>
+Statistics Cards<br><br>
+Main Content<br><br>
+</div>
+<div class="footer">
+
+Footer
+</div>
+
+</div>
+    </body>
+</html>

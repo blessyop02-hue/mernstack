@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height:normal;
+    text-align:justify;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+#title {
+    color: darkblue;
+    font: size 30px;;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px gray;
+    border-left: 4px solid #aaa;
+    padding: 8px;
+}
+
+
+h2 {
+    color:blueviolet;
+    text-transform:capitalize;
+    text-decoration: underline;
+    border-left: 4px #aaa;
+    padding: 8px;
+}
+
+
+.about {
+    color: black;
+    font-style: italic;
+    text-align: left;
+}
+
+.as {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    text-decoration:underline;
+}
+
+
+.hobbies {
+    text-align:justify;
+    letter-spacing: 2px;
+}
+
+.goals {
+    line-height: 2;
+    font-size: 17px;
+}
+
+.quote {
+    color: purple;
+    font-style: italic;
+    text-decoration:underline;
+}
+#unique{color: red;
+
+}

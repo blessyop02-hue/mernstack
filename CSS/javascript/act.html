@@ -1,0 +1,84 @@
+<html>
+    <heade>
+        <title>student data analyzer</title>
+    </heade>
+    <body>
+
+    <h1>student data analyzer</h1>
+    <h4>students</h4>
+    <div id="students"></div>
+    <div id="passed"></div>
+    <div id="total"></div>
+    <div id="pass"></div>
+    <div id="avarage"></div>
+    <div id="skills"></div>
+<script>
+        // document.getElementById("students")
+ let students = [
+ {name:"Ali", marks:85},
+ {name:"Sara", marks:45},
+ {name:"John", marks:92},
+ {name:"Emma", marks:67},
+ {name:"ammu", marks:16},
+ {name:"anu", marks:23}
+];
+ console.log(students);
+
+//  for eeach()
+students.forEach(student=>{
+    console.log(student.name);
+
+    document.getElementById("students").innerHTML +=
+  `<p>${student.name} : ${student.marks}</p>`;
+});
+
+
+// filter()
+let passed = students.filter(student => student.marks>= 50);
+console.log(passed);
+passed.forEach(student =>{
+document.getElementById("passed").innerHTML +=
+  `<p>${student.name} - ${student.marks}</p>`;
+
+});
+
+//   reduce
+let total = students.reduce((sum,student) => {
+    return sum + student.marks;
+}, 0);
+
+console.log(total);
+
+let avarage=total+students.length;
+console.log(avarage);
+
+document.getElementById("total").innerHTML =
+  `<p>${total} </p>
+  <p> ${avarage}</p>`;
+
+
+//   every()
+
+ let pass = students.every(student => student.marks >= 50);
+ console.log(pass);
+document.getElementById("students").innerHTML =
+  `<p>passed:${pass}</p>`;
+
+
+//   flatmap
+
+ let skills = [
+    ["HTML", "CSS"],
+    ["JavaScript", "React"]
+];
+console.log(skills);
+let an = skills.flatMap(skill => skill);
+
+console.log(an);
+
+document.getElementById("skills").innerHTML =
+  `<p>${an.join(",")}</p>`;
+</script>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Scale</title>
+        <style>
+            body{
+                padding: 100px;
+                margin: 100px;
+            }
+            .kr{
+                width: 100px;
+                height:100px;
+                text-align: center;
+                background-color: aqua;
+
+                animation: pop 12s ease-in-out infinite;
+            }
+            @keyframes pop{
+                0%{
+                    transform: scale(0%);
+                }
+                 50%{
+                    transform: scale(200%);
+                }
+                 100%{
+                    transform: scale(100%);
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="kr">frames</div>
+    </body>
+</html>

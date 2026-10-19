@@ -1,0 +1,157 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <titl>dom introduction</titl>
+    </head>
+    <body>
+        <h1 id="heading">welcome</h1>
+        <script>
+            let heading = document.getElementById("heading");
+            console.log(heading);
+
+            var newElement=document.createElement("h1");
+            newElement.innerHTML="new item";
+            document.body.appendChild(newElement)
+
+            let head=document.getElementById("head");
+            heading.textContent="hello world";
+        </script>
+    </body>
+</html> -->
+
+<!-- box.addEventListener("mouseover", function() {
+    console.log("Mouse is over the box");
+});
+
+
+box.addEventListener("mouseout", function() {
+    console.log("Mouse left the box");
+});
+
+document.addEventListener("keydown", function() {
+    console.log("Key pressed"); -->
+<!-- })  -->
+
+
+
+
+<!-- event -->
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Event</title>
+</head>
+<body>
+
+    <h2 id="text">Hello</h2>
+
+    <button id="myButton">Click Me</button>
+
+    <script>
+        let button = document.getElementById("myButton");
+
+        button.addEventListener("click", function() {
+            document.getElementById("text").innerHTML = "Button Clicked!";
+        });
+    </script>
+
+</body>
+</html> -->
+
+
+
+<!-- <h2 id="text">Hello</h2>
+
+<button id="btn">Click Me</button>
+
+<script>
+let button = document.getElementById("btn");
+
+button.addEventListener("click", function(event) {
+    console.log(event.type);
+    console.log(event.target);
+
+    document.getElementById("text").innerHTML = "Welcome";
+});
+</script>
+ -->
+
+
+ <!-- <h2 id="text">Hello</h2>
+
+<button id="btn">Click Me</button>
+
+<script>
+let button = document.getElementById("btn");
+
+document.addEventListener("keydown", function(event) {
+    console.log(event.key);
+});
+
+    
+</script> -->
+
+<!-- 
+ <!DOCTYPE html>
+<html>
+    <head>
+        <titl>dom introduction</titl>
+    </head>
+    <body>
+        <h1 id="heading">welcome</h1>
+        <button id="myButton">click me</button>
+        <script>
+            let heading = document.getElementById("heading");
+            console.log(heading);
+
+            var newElement=document.createElement("h1");
+            newElement.innerHTML="new item";
+            document.body.appendChild(newElement)
+
+            let head=document.getElementById("head");
+            heading.textContent="hello world";
+
+            var button=document.getElementById("myButton");
+            button.addEventListener("click",function()){
+                alert("button clicked");
+            };
+        </script>
+    </body>
+</html>  -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <titl>dom introduction</titl>
+    </head>
+    <body>
+        <h1 id="heading">move your mouse over me</h1>
+        <script>
+            var heading=document.getElementById("heading");
+            heading.addEventListener("mouseover",function(){
+                heading.textContent="mouse is over me";
+            });
+            heading.addEventListener("mouseout",function(){
+                heading.textContent="mouse moved away";
+            })
+        </script> -->
+
+
+        <!DOCTYPE html>
+<html>
+    <head>
+        <titl>dom introduction</titl>
+    </head>
+    <body>
+        <form id="myForm">
+        <input type="text" id="username">
+        <button type="submit">submit</button>
+         </form>
+         <script>
+            var form=document.getElementById("myForm");
+            form.addEventListener("submit",function(event){
+                event.preventDefault();
+                alert("form sumitted");
+            })
+         </script>

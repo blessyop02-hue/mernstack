@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>animation</title>
+        <style>
+            @keyframes colorChange{
+                0%{
+                    color: red;
+                }
+                50%{
+                    color:blue;
+                }
+                100%{
+                    color: green;
+                }
+            }
+            h1{
+                /* for color  change */
+                animation-name: colorChange;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                /* animation-iteration-count: 1s; */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>hello world</h1>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>bounce</title>
+        <style>
+            @keyframes squareMove{
+                0%{
+                    transform: translate(0,0);
+                    /* right left,top bottom */
+                    /* -+ values,-+ */
+                }
+                50%{
+                    transform: translate(0,100px);
+                }
+                100%{
+                    transform: translate(0,0);
+                }
+            }
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                animation: squareMove 3s linear infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div>bounce</div>
+    </body>
+</html>
+
+

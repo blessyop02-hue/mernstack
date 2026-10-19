@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>website</title>
+        <style>
+            body{
+                font-family: 'Courier New', Courier, monospace;
+                margin: 0;
+                padding: 0;
+                background-color: aliceblue;
+                text-align: center;
+            }
+            header{
+                background-color: blue;
+                color: aliceblue;
+                padding: 10px;
+                font-size: 2rem;
+            }
+            .container{
+                display: flex;
+                justify-content: space-around;
+                margin: 40px;
+            }
+            .card{
+                background-color: white;
+                border: 2px solid blue;
+                border-radius: 10px;
+                width: 30%;
+                padding: 20px;
+                box-shadow: 0 2px 5px black;
+            }
+            .card h2{
+                color:blue;
+            }
+            footer{
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                font-size: 2rem;
+            }
+            @media(max-width:900px){
+                header{
+                    font-size: 1.8rem;
+                    background-color: rgb(239, 153, 153);
+                }
+            
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+            .card{
+                width:70%;
+                background-color: rgb(214, 135, 135);
+                margin: 10px;
+                
+
+            }
+            footer{
+                font-size: 0.9rem;
+            }
+
+        }
+        @media(max-width:600px){
+            header{
+                font-size: 1.5rem;
+                background-color: rgb(128, 191, 128);
+            }
+            .card{
+                background-color: rgb(220, 220, 151);
+            }
+            .card h2{
+                font-size: 1.2rem;
+            }
+            footer{
+                font-size: 0.8rem;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>responsive website</header>
+        <div class="container">
+            <div class="card">
+                <h2>HTML</h2>
+                <p>style your webpage using html elements.</p>
+            </div>
+            <div class="card">
+                <h2>css</h2>
+                <p>style your webpage with colors,layout,and fonts.</p>
+            </div>
+            <div class="card">
+                <h2>javascript</h2>
+                <p>add interactivity and logic to your websites.</p>
+            </div>
+        </div>
+        <footer>@2025 learn web development</footer>
+    </body>
+</html>

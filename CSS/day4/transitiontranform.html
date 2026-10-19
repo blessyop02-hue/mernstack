@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>tranform and transition</title>
+        <style>
+            body{
+                padding: 100px;
+                margin: 100px;
+            }
+            .box{
+                width:200px;
+                height:80px;
+                background: blue;
+                color: white;
+                border: 2px solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .box1:hover{
+                transform: scale(3) rotate(180deg);
+            }
+            .box2{
+                transition: transform 0.5s ease;
+            }
+            .box:hover{
+                transform: scale(3) rotate(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box box1">transform only</div>
+        <div class="box box2">transition only+transition</div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<style>
+  #as{ color:darkslategray;
+    font-size: 16px;
+    background-color: darkgray;
+    border-left: 4px solid #aaa;
+    padding: 8px;
+
+}
+.as{ color:black;
+    font-size: 16px;
+    background-color:darkgrey;
+    border-left: 4px solid #aaa;
+    padding: 8px;
+
+}
+.ad{color:darksalmon;
+    font-size: 16px;
+    background-color:chocolate;
+    border-left: 4px solid #aaa;
+    padding: 8px;
+
+}
+#qw{color:black;
+    font-size: 16px;
+    background-color:cornflowerblue;
+    border-left: 4px solid #aaa;
+    padding: 8px;
+}
+
+
